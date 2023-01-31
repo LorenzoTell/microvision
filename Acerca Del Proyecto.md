@@ -1,19 +1,15 @@
 # microvision ESPAÑOL
-Programa de adquisición de imágenes tomadas con microscopios ópticos a los cuales se les adapta una camara web de alta resolución.
-Corre con python, con las librerías Tkinter, opencv, numpy, ctypes.wintypes, PIL, imutils, random, math, os, time, subprocess. Programado en Linux. Si se va a utilizar en windows debe cambiarse "cap = cv2.VideoCapture(2, cv2.CAP_V4L)" por "cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)" 
-Puede portearse a un ejecutable .exe para Windows // estamos trabajando en esto, hasta el momento, todas las funciones fueron testeadas en linux Manjaro 64bits
+Un programa de adquisición de imágenes de soporte de alta resolución para microscopios ópticos usando una cámara web. Desarrollado con el lenguaje de programación Python y utilizando bibliotecas como Tkinter, OpenCV, NumPy, ctypes.wintypes, PIL, imutils, random, math, os, time y subprocess. El programa se desarrolló y probó originalmente en el sistema operativo Linux Manjaro de 64 bits. Para compatibilidad con Windows, la línea "cap = cv2.VideoCapture(x, cv2.CAP_V4L)" debe cambiarse a "cap = cv2.VideoCapture(x, cv2.CAP_DSHOW)". Actualmente, el programa se está porteando a un ejecutable .exe para Windows.
 
-![alt text](https://github.com/LorenzoTell/microvision/blob/main/GUI.png)
+![texto alternativo](https://github.com/LorenzoTell/microvision/blob/main/GUI.png)
 
-El programa consta de una GUI con botones para seleccionar la configuración actual del microscopio (objetivo y ocular que se está usando) Mostrar una region de interes (ROI) al precionar el boton "Iniciar" y dos funciones "Capturar imágenes" que captura el ROI de la imágen en png en la mayor resolución que la cámara empleada pueda ofrecer y "capturar video" captura video en la mayor resolución y fps que la cámara pueda ofrecer. Nosotros elegimos la camara gadnic webcam 4k para obtener ROI de 2020x2020px y captura de video por h.265.
+El programa presenta una interfaz gráfica de usuario (GUI) con botones para seleccionar la configuración actual del microscopio, como el objetivo y el ocular en uso. Al presionar el botón "Inicio", los usuarios pueden mostrar una región de interés (ROI). El programa también ofrece dos funciones de "Captura", incluida la capacidad de capturar el ROI en la resolución más alta disponible de la cámara en formato PNG y una función de "Capturar video" para capturar video en la resolución más alta y fotogramas por segundo que ofrece la cámara. El programa fue diseñado para trabajar con la cámara web 4K de GADNIC para lograr un ROI de 2020x2020 píxeles y captura de video H.265.
 
-La funcion "Medir" ejecuta el software ImageJ, para que esto funcione, los scripts y los archivos xml que acompañan a este proyecto deben estar en la carpeta raíz del software ImageJ junto al ejecutable. ImageJ es un programa muy utilizado por la comunidad científica para el procesamiento de micrografías. Link: https://imagej.nih.gov/ij/download.html
+El programa también incluye una función de "Medir" que ejecuta el software ImageJ para el procesamiento de imágenes. Para que esta función sea posible, los scripts y archivos XML que lo acompañan deben estar ubicados en la carpeta raíz del software ImageJ, junto al ejecutable. ImageJ es un programa ampliamente utilizado en la comunidad científica para el procesamiento de micrografías y se puede descargar desde el siguiente enlace: https://imagej.nih.gov/ij/download.html.
 
-El proyecto está pensado para poder utilizarse en la mayoría de los sistemas de microscopía a los cuales una cámara web pueda adaptarse al ocular del mismo. El acople que utilizamos nosotros para la gadnic fue impreso en 3D para un ocular de microscopio Arcano L101. Este no es un ocular estándar, si alguien necesitase un adaptador para la cámara gadnic puede escribir al mail lorenzotell1998@gmail.com con la petición, y las dimensiones del ocular que se pretende usar y sin problemas le puedo diseñar un encastre para el mismo.
+El proyecto está diseñado para ser compatible con la mayoría de los sistemas de microscopía que pueden acomodar una cámara web en su ocular. El acoplamiento utilizado para la cámara web GADNIC se imprimió en 3D específicamente para un ocular de microscopio Arcano L101. Sin embargo, si se usa un ocular diferente y se necesita un adaptador, los usuarios pueden solicitar uno enviando un correo electrónico a lorenzotell1998@gmail.com con las dimensiones del ocular deseado. Luego, el diseñador creará un encaje personalizado para acomodar el ocular solicitado.
 
-![alt text](https://github.com/LorenzoTell/microvision/blob/main/adaptador.png)
-
-
+![texto alternativo](https://github.com/LorenzoTell/microvision/blob/main/adaptador.png)
 
 
 
