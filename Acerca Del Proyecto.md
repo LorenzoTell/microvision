@@ -12,4 +12,14 @@ El proyecto está diseñado para ser compatible con la mayoría de los sistemas 
 ![texto alternativo](https://github.com/LorenzoTell/microvision/blob/main/adaptador.png)
 
 
+# El programa de configuración del sistema cal.py
 
+En el programa cal.py se deben seleccionar la cantidad de objetivos que posee el sistema. Luego se deben seleccionar el o los oculares a los cuales se les va a adaptar la cámara. Luego se debe cargar la información de cada objetivo y ocular para que el programa haga un cálculo del FOV. Luego de configurar los elementos del sistema, se procede a calibrar los ROI de cada configuración óptica, seleccione el ocular que se está utilizando actualmente y el objetivo, ejecute la rutina de calibración para que el programa automáticamente detecte el ROI de la circunferencia del tubo óptico. Esta información de encuadre se van a guardar en un archivo xml que luego serán utilizados en el programa principal para la captura de las imágenes, así que es primordial ejecutar esta rutina de calibración tantas veces como sea necesaria para que el sistema quede perfectamente alineado. En la rutina de calibración verá una ventana con la imágen del tubo óptico, y dos sliders, uno con el valor de umbralización para ajustar perfectamente la circunferencia y otro para aceptar el inicio de la rutina de deteccion
+
+![alt text](https://github.com/LorenzoTell/microvision/blob/main/circuloCal.png)
+
+Una vez detectado el ROI cuadrado, observe si el mismo encastra perfectamente, caso contrario repita la calibración.
+
+![alt text](https://github.com/LorenzoTell/microvision/blob/main/circuloFin.png)
+
+Haga este proceso para cada combinación de ocular/objetivo que disponga. Puede comprobar cada ROI presionando el boton "INICIAR" y observando el recorte en tiempo real 
