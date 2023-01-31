@@ -14,7 +14,7 @@ El proyecto está pensado para poder utilizarse en la mayoría de los sistemas d
 ![alt text](https://github.com/LorenzoTell/microvision/blob/main/adaptador.png)
 
 
-#microvision ENGLISH
+# microvision ENGLISH
 Program for the acquisition of images taken with optical microscopes to which a high-resolution webcam is adapted.
 It runs with python, with the Tkinter, opencv, numpy, ctypes.wintypes, PIL, imutils, random, math, os, time, subprocess libraries. Programmed in Linux. If it is going to be used in windows, "cap = cv2.VideoCapture(2, cv2.CAP_V4L)" should be changed to "cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)"
 It can be ported to a .exe executable for Windows // we are working on this, so far, all functions have been tested on linux Manjaro 64bits
