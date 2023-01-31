@@ -1,5 +1,8 @@
 # microvision ESPAÑOL
-Un programa de adquisición de imágenes de soporte de alta resolución para microscopios ópticos usando una cámara web. Desarrollado con el lenguaje de programación Python y utilizando bibliotecas como Tkinter, OpenCV, NumPy, ctypes.wintypes, PIL, imutils, random, math, os, time y subprocess. El programa se desarrolló y probó originalmente en el sistema operativo Linux Manjaro de 64 bits. Para compatibilidad con Windows, la línea "cap = cv2.VideoCapture(x, cv2.CAP_V4L)" debe cambiarse a "cap = cv2.VideoCapture(x, cv2.CAP_DSHOW)". Actualmente, el programa se está porteando a un ejecutable .exe para Windows.
+
+Nuestro programa ofrece una interfaz fácil de usar que muestra imágenes de alta resolución en tiempo real capturadas desde un microscopio óptico común usando una cámara web comercial y una computadora. Esta solución rentable proporciona una alternativa a los costosos sistemas comerciales y es una opción ideal para el análisis y la obtención de imágenes micrométricas. El programa también incluye la capacidad de capturar video de alta resolución, lo que lo convierte en una herramienta versátil para sus necesidades de imágenes.
+
+Desarrollado utilizando el lenguaje de programación Python y utilizando bibliotecas como Tkinter, OpenCV, NumPy, ctypes.wintypes, PIL, imutils, random, math, os, time y subprocess. El programa se desarrolló y probó originalmente en el sistema operativo Linux Manjaro de 64 bits. Para compatibilidad con Windows, la línea "cap = cv2.VideoCapture(2, cv2.CAP_V4L)" debe cambiarse a "cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)". Actualmente, el programa se está transfiriendo a un ejecutable .exe para Windows".
 
 ![texto alternativo](https://github.com/LorenzoTell/microvision/blob/main/GUI.png)
 
